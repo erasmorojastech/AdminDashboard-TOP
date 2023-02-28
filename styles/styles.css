@@ -57,3 +57,64 @@ main {
   color: var(--font-color-sidebar);
   font-family: Roboto;
 }
+
+/* S I D E B A R */
+/* Sidebar title styles */
+
+.aside-title {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+}
+
+#dashboard-logo {
+  filter: invert(100%);
+  width: 48px;
+  height: 48px;
+  justify-self: center;
+}
+
+#dashboard {
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Links styles */
+.info-top,
+.info-bottom {
+  margin-top: 5rem;
+}
+
+.link-top,
+.link-bottom {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  text-align: left;
+  font-weight: bolder;
+  font-size: 14pt;
+}
+
+.icon {
+  justify-self: center;
+  width: 24px;
+  height: 24px;
+}
+
+.link-top:hover,
+.link-bottom:hover {
+  background-color: var(--font-color-sidebar);
+  color: var(--bg-color-sidebar);
+  transition: 500ms;
+}
